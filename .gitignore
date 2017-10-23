@@ -1,0 +1,6 @@
+/logs
+/.data
+.env
+/key/ssh/*
+!/key/ssh/.gitkeep
+.idea/*
