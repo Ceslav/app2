@@ -1,7 +1,7 @@
 # This file is auto-generated during the composer install
 parameters:
     database_host: db
-    database_port: null
+    database_port: 3309
     database_name: app
     database_user: user
     database_password: userpass

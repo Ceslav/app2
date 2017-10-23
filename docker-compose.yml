@@ -4,7 +4,7 @@ services:
     db:
         image: mysql
         ports:
-            - 3308:3306
+            - 3309:3306
         volumes:
             - "./.data/db:/var/lib/mysql"
         environment:
@@ -26,7 +26,7 @@ services:
     nginx:
         build: nginx
         ports:
-            - 8081:80
+            - 8082:80
         volumes_from:
             - php
         volumes:
@@ -34,7 +34,7 @@ services:
     elk:
         image: willdurand/elk
         ports:
-            - 82:80
+            - 83:80
         volumes:
             - ./elk/logstash:/etc/logstash
             - ./elk/logstash/patterns:/opt/logstash/patterns
